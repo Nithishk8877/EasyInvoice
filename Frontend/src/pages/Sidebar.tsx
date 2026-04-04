@@ -9,7 +9,6 @@ import {
   GitBranch,
   UserCheck,
   Settings,
-  ChevronDown,
 } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
@@ -119,7 +118,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen = true, onClose }) => {
         <nav className={`space-y-1 overflow-y-auto px-4 py-6 flex-1 ${isDark ? '' : ''}`}>
           {menuItems.map((item) => {
             const Icon = item.icon;
-            const isExpanded = expandedMenu === item.id;
 
             return (
               <div key={item.id}>
