@@ -1,3 +1,38 @@
+@import "tailwindcss";
+*{
+  box-sizing: border-box;
+
+}
+.toast-success {
+  background-color: #16a34a;
+  color: white;
+  border-color: #059669;
+}
+
+.toast-failure {
+  background-color: #dc2626;
+  color: white;
+  border-color: #b91c1c;
+}
+
+.toast-warning {
+  background-color: #f59e0b;
+  color: #0f172a;
+  border-color: #fbbf24;
+}
+
+.toast-info {
+  background-color: #0f172a;
+  color: white;
+  border-color: #334155;
+}
+
+.toast-default {
+  background-color: #334155;
+  color: white;
+  border-color: #475569;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -51,12 +86,8 @@
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -64,6 +95,15 @@
 
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 h1,
